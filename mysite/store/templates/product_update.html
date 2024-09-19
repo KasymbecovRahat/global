@@ -1,0 +1,10 @@
+<form method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button TYPE="submit" > SAVE  </button>
+
+</form>
+
+<button> <a href="{% url 'product_list'  %}" ></a>  CANCEL </button>
